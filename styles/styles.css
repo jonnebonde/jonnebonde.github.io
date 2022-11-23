@@ -4,18 +4,133 @@
   box-sizing: border-box;
 }
 
-body {
+.nav-hamburgermenu-icon {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  border-radius: 100px;
+}
+
+nav {
+  position: fixed;
+  background-color: white;
+  padding: 15px;
+  width: 100%;
+}
+
+nav .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container ul{
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.container a {
+  color: black;
+  text-decoration: none;
+}
+
+.activeLink {
+  border-bottom: 2px solid black;
+}
+
+section {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+#home {
   background-color: blueviolet;
+}
+
+#about {
+  background-color: blue;
+}
+
+#projects {
+  background-color: red;
+}
+
+#contact {
+  background-color: green;
 }
 
 h1 {
   padding: 10px 35px;
   background-color: white;
   border-radius: 3px 30px 3px 30px;
+}
+
+@media screen and (max-width: 500px) {
+
+  .nav-hamburgermenu-icon {
+    display: block;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+
+  .nav-hamburgermenu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-hamburgermenu-icon.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .nav-hamburgermenu-icon.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .container {
+    position: absolute;
+    display: none;
+    right: -100%;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+  }
+
+  .container ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container li,
+  .container a {
+    display: block;
+    font-size: 1.6rem;
+    padding: 5px;
+  }
+
+  .container.active {
+    transition: 0.4s ease-in-out;
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    z-index: 10;
+  }
+
+
 }
