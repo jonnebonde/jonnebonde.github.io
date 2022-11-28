@@ -23,7 +23,7 @@ window.onscroll = () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 4) {
+    if (pageYOffset >= sectionTop - sectionHeight / 4.2) {
       current = section.getAttribute("id");
     }
   });
@@ -31,7 +31,6 @@ window.onscroll = () => {
   navLi.forEach((li) => {
     li.classList.remove("activeLink");
     if (li.classList.contains(current)) {
-  
       li.classList.add("activeLink");
     }
   });
