@@ -102,7 +102,7 @@ footer {
 }
 
 
-@media screen and (max-width: 500px) {
+@media (width < 500px) {
 
   .nav-hamburgermenu-icon {
     display: block;
