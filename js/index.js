@@ -29,9 +29,9 @@ window.onscroll = () => {
   });
 
   navLi.forEach((li) => {
-    li.classList.remove("activeLink");
+    li.classList.remove("active_link");
     if (li.classList.contains(current)) {
-      li.classList.add("activeLink");
+      li.classList.add("active_link");
     }
   });
 }
