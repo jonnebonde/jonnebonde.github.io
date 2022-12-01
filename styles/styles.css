@@ -66,26 +66,19 @@ section {
   align-items: center;
 }
 
-#home {
-  background-color: blueviolet;
-}
-
-#about {
-  background-color: blue;
-}
-
-#projects {
-  background-color: red;
-}
-
+#home,
+#about,
+#projects,
 #contact {
-  background-color: green;
+  background: linear-gradient(90deg, black, purple);
 }
+
+
 
 h1 {
   padding: 10px 35px;
   background-color: white;
-  border-radius: 3px 30px 3px 30px;
+  border-radius: 5px 2px;
 }
 
 .card-wrapper {
@@ -97,7 +90,7 @@ h1 {
 
 .card {
   background-color: aqua;
-  border-radius: 3px 30px 3px 30px;
+  border-radius: 5px 2px;
 }
 
 .card img {
