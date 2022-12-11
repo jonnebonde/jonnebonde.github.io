@@ -1,5 +1,5 @@
 const toggleButton = document.querySelector(".nav-hamburgermenu-icon");
-const navMenu = document.querySelector(".container");
+const navMenu = document.querySelector(".nav-link-container");
 const navContainer = document.querySelector("nav");
 
 toggleButton.addEventListener("click", () => {
@@ -16,7 +16,7 @@ document.addEventListener("click", function (e) {
 
 
 const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("nav .container ul li");
+const navLi = document.querySelectorAll("nav .nav-link-container ul li");
 window.onscroll = () => {
   var current = "";
 
