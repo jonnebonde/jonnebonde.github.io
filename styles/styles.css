@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 
-.logo-container {
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  padding: 15px;
   width: 100%;
-}
-
-
-.logo-container img {
-  display: block;
-  width: clamp(80px, 50%, 200px);
+  top: 0;
 }
 
 .nav-hamburgermenu-icon {
@@ -28,27 +28,20 @@
   border-radius: 100px;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  background-color: white;
-  padding: 15px;
+.logo-container {
   width: 100%;
-  top: 0;
 }
 
-nav .nav-link-container {
+.logo-container img {
+  display: block;
+  width: clamp(130px, 50%, 200px);
+}
+
+.nav-link-container {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-main {
-  scroll-behavior: smooth;
-  width: 100%;
-  min-height: 100vh;
-  display: block;
+  z-index: 20;
 }
 
 .nav-link-container ul {
@@ -61,12 +54,25 @@ li {
 }
 
 .nav-link-container a {
+  display: block;
+  font-size: 22px;
   color: black;
   text-decoration: none;
 }
 
+.nav-link-container a:hover {
+  border-bottom: 2px solid black
+}
+
 .active_link {
   border-bottom: 2px solid black;
+}
+
+main {
+  display: block;
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
 }
 
 section {
@@ -85,25 +91,63 @@ section {
   background: black;
 }
 
-.home-sidebar {
-  position: absolute;
-  left: 0;
-  padding: 10px;
-}
-
-.home-sidebar i {
-  font-size: 40px;
+#home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #home > * {
   background-color: White;
 }
 
+.home-sidebar {
+  padding: 1rem;
+  border-radius: 0.1rem;
+  margin-right: auto;
+}
+
+.home-sidebar i {
+  font-size: 50px;
+  color: black;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 0.2rem;
+}
+
 h1 {
+  font-size: 50px;
   padding: 10px 35px;
   background-color: white;
   border-radius: 5px 2px;
 }
+
+.home-text span {
+  font-size: 20px;
+  padding:  0 0 20px 0;
+}
+
+.home-text a {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 0.2rem;
+}
+
+.home-text a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: inset 0 0 0 1px black;
+}
+
 
 .card-wrapper {
   display: flex;
@@ -138,7 +182,7 @@ footer {
 }
 
 
-@media (width < 500px) {
+@media screen and (max-width: 900px) {
 
   nav {
     display: flex;
@@ -196,6 +240,14 @@ footer {
     width: 100%;
     background-color: white;
     z-index: 10;
+  }
+
+  .home-sidebar {
+    display: none;
+  }
+
+  .home-text {
+    margin: auto;
   }
 
 
