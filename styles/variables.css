@@ -1,0 +1,19 @@
+:root {
+
+
+  /** Font-size **/
+
+  --fs-a: 22px ;
+  --fs-i: 50px;
+  --fs-h1: clamp(1.3rem, 1.1rem + 1.7197vw, 3.125rem);
+  --fs-h2: clamp(1.1rem, 0.9rem + 0.6306vw, 1.875rem);
+  --fs-span: 20px;
+  --fs-mobile-links: 1.6rem;
+
+  /** Colours **/
+
+  --col-black: black;
+  --col-white: white;
+  --col-orange: #ff7c00;
+
+}
