@@ -10,7 +10,6 @@
   src: url("../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -124,7 +123,7 @@ section {
 }
 
 #contact {
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .home-text {
@@ -153,7 +152,7 @@ h2 {
 
 .home-text a {
   padding: 15px 30px;
-  background-color:  var(--col-light-blue);
+  background-color: var(--col-light-blue);
   color: var(--col-black);
   font-size: var(--fs-span);
   text-decoration: none;
@@ -202,7 +201,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 25px;
   gap: 20px;
 }
@@ -228,7 +227,7 @@ h2 {
 }
 
 .fa-html5 {
-  color: #e34c26 ;
+  color: #e34c26;
 }
 
 .fa-css3-alt {
@@ -291,7 +290,7 @@ h2 {
 
 .links a {
   width: 120px;
-  padding:10px 15px;
+  padding: 10px 15px;
   border-radius: 0.2rem;
   text-decoration: none;
   color: var(--col-black);
@@ -432,7 +431,7 @@ h2 {
   color: var(--col-black);
   text-align: center;
   width: 120px;
-  padding: 12px ;
+  padding: 12px;
   cursor: pointer;
   border: none;
   background-color: var(--col-light-blue);
@@ -442,8 +441,8 @@ h2 {
 
 .submit:hover,
 .links a:hover {
-box-shadow: none;
-transform: translate(3px, 3px);
+  box-shadow: none;
+  transform: translate(3px, 3px);
 }
 
 @media screen and (max-width: 1100px) {
@@ -526,13 +525,14 @@ transform: translate(3px, 3px);
   #about {
     height: 90vh;
   }
-  
+
   #projects {
     height: calc(100vh + 35vh);
   }
-  
+
   #contact {
-    min-height: 100vh;
+    margin-top: auto;
+    height: 100vh;
   }
 
   .home-text {
@@ -558,6 +558,7 @@ transform: translate(3px, 3px);
 
 
 @media screen and (max-width: 560px) {
+
   .home-text,
   .projects-wrapper {
     width: 90%;
