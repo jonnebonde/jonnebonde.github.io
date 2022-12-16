@@ -144,9 +144,11 @@ h2 {
   font-size: var(--fs-h2);
 }
 
-.home-text span {
+.home-text span,
+.projects-wrapper span {
   font-size: var(--fs-span);
   padding: 0 0 20px 0;
+  color: var(--col-white);
 }
 
 .home-text a {
@@ -308,12 +310,25 @@ h2 {
 .contact-wrapper {
   margin-top: 200px;
   color: var(--col-white);
-  padding: 5px;
+  padding: 5px 5px 30px 5px;
   border-radius: 0.2rem;
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 10px;
+  background-color: var(--col-white);
+  width: 100%;
+  text-align: center;
 }
 
 .contact-wrapper h1 {
   margin-bottom: 20px;
+}
+
+.contact-wrapper span {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .home-sidebar {
@@ -409,7 +424,7 @@ h2 {
 
 .submit_btn {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .submit {
@@ -430,14 +445,6 @@ h2 {
 box-shadow: none;
 transform: translate(3px, 3px);
 }
-
-footer {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 10px;  
-}
-
 
 @media screen and (max-width: 1100px) {
 
@@ -543,7 +550,7 @@ footer {
   }
 
   .card-wrapper {
-    gap: 10px;
+    gap: 30px;
     margin-top: 1rem;
   }
 
