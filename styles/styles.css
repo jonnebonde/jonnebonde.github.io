@@ -528,11 +528,11 @@ transform: translate(3px, 3px);
   }
   
   #projects {
-    height: calc(100vh + 30vh);
+    height: calc(100vh + 35vh);
   }
   
   #contact {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .home-text {
