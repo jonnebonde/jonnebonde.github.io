@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/b32e365c8c.js" crossorigin="anonymous"></script>
   <link href="./styles/styles.css" rel="stylesheet" />
-  <title>Portfolio</title>
+  <title></> Jonne </title>
 </head>
 <body>
   <header>
@@ -34,13 +34,6 @@
   </header>
   <main class="section-wrapper">
       <section id="home">
-        <div class="home-sidebar">
-          <ul>
-            <li><a href="#"><i class="fa-brands fa-github-square"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-        </ul>
-        </div>
         <div class="home-text">
           <h1>Hello there... I`m Jonne</h1>
           <h2>Welcome to my portfolio</h2>
@@ -56,18 +49,20 @@
             <img src="../assets/images/ProfilePicture2Thumbnail.jpg">
             <div class="about-content">
               <span>
-                My name is Jonne i live in askim, norway. 38 years old front-end student at Noroff.
+                Hi, i`m a front-end student at Noroff.
                 I have found my new passion in front-end.
                 My goals are simplicity in both design and coding. When im not studying i enjoy my time with family and friends.
                 I love to learn or try new things.
               </span>
               <div class="about-skills-container">
               <h2>Skills</h2>
-              <ul class="about-skills-list">
-                <li>HTML5<i class="fa-brands fa-html5"></i></li>
-                <li>CSS<i class="fa-brands fa-css3-alt"></i></li>
-                <li>Javascript<i class="fa-brands fa-square-js"></i></li>
-              </ul>
+                <div class="about-skills-icons">
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-square-js"></i>
+                  <i class="fa-brands fa-wordpress"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
             </div>
             </div>
           </div>
@@ -89,16 +84,16 @@
               <h2>Cross Course Project</h2>
               <img src="/assets/images/rainydaysThumbnail.jpg">
               <div class="links">
-                <a href="https://rainydayskrosby.netlify.app/">Live site</a>
-                <a href="https://github.com/jonnebonde/InterActiveDesign_CA_Jonne-Martin-Krosby">Github</a>
+                <a class="live-site-link" href="https://rainydayskrosby.netlify.app/">Live site</a>
+                <a class="github-link" href="https://github.com/jonnebonde/InterActiveDesign_CA_Jonne-Martin-Krosby">Github</a>
               </div>
           </div>
           <div class="card">
             <h2>Semester Project 1</h2>
             <img src="/assets/images/ScienceCommunityMuseumThumbnail.jpg">
             <div class="links">
-              <a href="https://app.netlify.com/sites/jonnekrosbysemesterproject2021/overview">Live site</a>
-              <a href="https://github.com/jonnebonde/Semester-Project-1">Github</a>
+              <a class="live-site-link" href="https://jonnekrosbysemesterproject2021.netlify.app/">Live site</a>
+              <a class="github-link" href="https://github.com/jonnebonde/Semester-Project-1">Github</a>
             </div>
         </div>
           </div>
@@ -125,25 +120,33 @@
       <section id="contact">
         <div class="contact-wrapper">
           <h1>Contact</h1>
+          <div class="home-sidebar">
+            <ul>
+              <li><a title="Github - Jonne" href="https://github.com/jonnebonde"><i class="fa-brands fa-github-square"></i></a></li>
+              <li><a title="Linkedin - Jonne" href="http://www.linkedin.com/in/jonne-martin-krosby-a689ba1b1"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a title="Twitter - Jonne" href="https://twitter.com/JonneKrosby"><i class="fa-brands fa-square-twitter"></i></a></li>
+              <li><a title="Discord - Jonne" href="https://www.discordapp.com/users/9504"><i class="fa-brands fa-discord"></i></a></li>
+          </ul>
+          </div>
           <div class="form-container">
             <form id="contactForm" class="contact-form flex-col">
               <input name="hidden" id="hidden" hidden />
               <label class="name">Name(required)
                 <input name="name" id="name" />
               </label>
-              <div class="input_error" id="nameError">min 5 characters</div>
+              <div class="input_error" id="nameError">min 2 characters</div>
               <label class="subject" for="subject">Subject(required)
                 <input name="subject" id="subject" />
               </label>
-              <div class="input_error" id="subjectError">min 15 characters</div>
+              <div class="input_error" id="subjectError">min 8 characters</div>
               <label class="email">Email(required)
                 <input name="email" id="email" />
               </label>
               <div class="input_error" id="emailError">Email is not in the correct format</div>
               <label class="message">Message(required)
-                <textarea name="message" id="message" placeholder="min. 25 characters"></textarea>
+                <textarea name="message" id="message" placeholder="min. 10 characters"></textarea>
               </label>
-              <div class="input_error" id="messageError">min 25 characters</div>
+              <div class="input_error" id="messageError">min 10 characters</div>
               <div class="contact-form-success"></div>
               <div class="submit_btn">
                 <button class="submit">Submit</button>
@@ -154,7 +157,7 @@
       </section>
   </main>
   <footer>
-      <h1>footer section under construction</h1>
+      <span>Copyright © 2022 Jonne Martin Krosby</span>
   </footer>
 </body>
 <script src="/js/index.js"></script>

@@ -8,15 +8,15 @@
   --fs-h1: clamp(1.3rem, 1.1rem + 1.7197vw, 3.125rem);
   --fs-h2: clamp(1.2rem, 1rem + 0.6306vw, 1.875rem);
   --fs-span: clamp(1rem, 0.9443rem + 0.2548vw, 1.25rem);;
-  --fs-brand: 30px;
+  --fs-brand: 35px;
   --fs-mobile-links: 1.6rem;
 
   /** Colours **/
 
   --col-black: black;
   --col-white: white;
-  --col-orange: #ff7c00;
-  --col-almost-white: #FFF9F3;
+  --col-light-blue: #00bcf2;
+  --col-even-lighter-blue: #91E7FF;
 
 
 }
