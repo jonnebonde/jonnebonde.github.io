@@ -29,7 +29,7 @@ span {
 }
 
 header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
 }
@@ -111,19 +111,20 @@ section {
 }
 
 #home {
-  min-height: 50vh;
+  min-height: 100vh;
 }
 
 #about {
-  min-height: 60vh;
+  min-height: 100vh;
 }
 
 #projects {
-  height: 70vh;
+  min-height: 100vh;
+  
 }
 
 #contact {
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 .home-text {
@@ -246,6 +247,7 @@ h2 {
   text-align: center;
   border-radius: 0.2rem;
   padding: 15px;
+  margin-top: 70px;
 }
 
 .projects-wrapper h1 {
