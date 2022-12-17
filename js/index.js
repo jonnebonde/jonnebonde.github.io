@@ -3,6 +3,7 @@ const navMenu = document.querySelector(".nav-link-container");
 const navContainer = document.querySelector("nav");
 const linkButton = document.querySelectorAll(".nav-link-container a");
 
+
 toggleButton.addEventListener("click", () => {
   toggleButton.classList.toggle("active");
   navMenu.classList.toggle("active");
@@ -24,6 +25,7 @@ linkButton.forEach(function (x) {
 
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .nav-link-container ul li");
+const pageTitle = document.querySelector("title");
 window.onscroll = () => {
   var current = "";
 
@@ -32,13 +34,19 @@ window.onscroll = () => {
     const sectionHeight = section.clientHeight;
     if (pageYOffset >= sectionTop - sectionHeight / 4.2) {
       current = section.getAttribute("id");
+      
     }
   });
 
   navLi.forEach((li) => {
     li.classList.remove("active_link");
+  
     if (li.classList.contains(current)) {
       li.classList.add("active_link");
+      console.log(current)
+      const firstLetterUpperCase = current.charAt(0).toUpperCase() + current.slice(1);
+      // make the first letter in uppercase
+      pageTitle.innerHTML = `[</>] Jonne - ${firstLetterUpperCase}`;
     }
   });
 }
