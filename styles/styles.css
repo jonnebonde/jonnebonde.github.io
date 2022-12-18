@@ -37,7 +37,6 @@ header {
   width: 100%;
   top: 0;
   background-color: var(--col-white);
- 
 }
 
 nav {
@@ -276,6 +275,20 @@ h2 {
   border-radius: 0.2rem;
   text-align: center;
   background-color: var(--col-white);
+  max-width: 406px;
+}
+
+.card h2 {
+  border-bottom: 2px solid var(--col-black);
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+p {
+  font-family: "opensans";
+  padding: 0 10px 10px 10px;
 }
 
 .card img {
