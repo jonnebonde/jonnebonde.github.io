@@ -502,7 +502,9 @@ footer {
     justify-content: center;
     text-align: center;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s, right 0.3s linear;
+    top: 0;
+    height: 0px;
+    transition: visibility 0s, opacity 0.2s, top 0.2s linear;
   }
 
   .nav-link-container ul {
@@ -524,9 +526,10 @@ footer {
     top: clamp(30px, 100%, 90px);
     right: 0;
     width: 100%;
+    height: auto;
     background-color: var(--col-white);
     z-index: 10;
-    opacity: 1;    
+    opacity: 1; 
   }
 
   #home {
