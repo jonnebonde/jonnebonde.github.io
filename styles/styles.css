@@ -498,7 +498,6 @@ footer {
   .nav-link-container {
     position: absolute;
     visibility: hidden;
-    right: -100%;
     overflow: hidden;
     justify-content: center;
     text-align: center;
