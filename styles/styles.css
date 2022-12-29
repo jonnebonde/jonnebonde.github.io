@@ -197,13 +197,14 @@ h2 {
   width: 100%;
   height: auto;
   margin: 5px auto;
-  border-radius: 0.2rem;
+  
 }
 
 .about-image img {
   display: block;
   margin: 0 auto;
   width: clamp(100px, 50%, 300px);
+  border-radius: 0.2rem;
 }
 
 .about-container {
