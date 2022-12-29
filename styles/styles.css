@@ -166,6 +166,7 @@ h2 {
   text-decoration: none;
   border-radius: 0.2rem;
   box-shadow: 3px 3px grey;
+  transition: all 0.12s;
 }
 
 .home-text a:hover {
@@ -322,12 +323,14 @@ p {
   color: black;
   background-color: var(--col-light-blue);
   box-shadow: 3px 3px grey;
+  transition: all 0.12s;
 }
 
 .github-link {
   color: white;
   background-color: #6e5494;
   box-shadow: 3px 3px var(--col-black);
+  transition: all 0.12s;
 }
 
 .contact-wrapper {
@@ -454,6 +457,7 @@ p {
   background: var(--col-light-blue);
   border-radius: 0.2rem;
   box-shadow: 3px 3px grey;
+  transition: all 0.12s;
 }
 
 .submit:hover,
