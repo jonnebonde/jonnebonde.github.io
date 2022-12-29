@@ -193,12 +193,17 @@ h2 {
   text-align: center;
 }
 
-.about-container img {
-  display: block;
-  width: clamp(100px, 50%, 300px);
+.about-image {
+  width: 100%;
   height: auto;
   margin: 5px auto;
   border-radius: 0.2rem;
+}
+
+.about-image img {
+  display: block;
+  margin: 0 auto;
+  width: clamp(100px, 50%, 300px);
 }
 
 .about-container {
