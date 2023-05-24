@@ -156,7 +156,7 @@ function formSubmitSuccesfull() {
   formSuccess.innerHTML = `
       <div class="flex-col">
         <span>Thank u ${nameInput.value}</span>
-        <span>We will contact u within 24 hours</span>
+        <span>I will contact u within 24 hours</span>
         <span>on ${emailInput.value}</span>
       </div>`;
   resetPage();
