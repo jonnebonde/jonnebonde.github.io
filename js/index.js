@@ -43,9 +43,10 @@ window.onscroll = () => {
 
     if (li.classList.contains(current)) {
       li.classList.add("active_link");
-      console.log(current);
-      const firstLetterUpperCase = current.charAt(0).toUpperCase() + current.slice(1);
+
       // make the first letter in uppercase
+      const firstLetterUpperCase = current.charAt(0).toUpperCase() + current.slice(1);
+
       pageTitle.innerHTML = `[</>] Jonne - ${firstLetterUpperCase}`;
     }
   });
