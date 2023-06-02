@@ -197,7 +197,7 @@ h2 {
   width: 100%;
   height: auto;
   margin: 5px auto;
-  
+
 }
 
 .about-image img {
@@ -396,8 +396,8 @@ p {
   color: var(--col-black);
 }
 
-.contact-form-success {
-  display: none;
+.message,
+.form-message {
   width: 100%;
   text-align: center;
   margin: 30px auto;
@@ -410,11 +410,6 @@ p {
   align-self: center;
   margin: 10px auto;
   width: 100%;
-}
-
-.contact-form div {
-  padding: 2px 0px;
-  margin-bottom: 10px;
 }
 
 .contact-form input,
@@ -440,9 +435,22 @@ p {
 
 .input_error {
   visibility: hidden;
+}
+
+.input_error,
+.error {
   border-radius: 0.2rem;
-  padding: 3px;
+  padding: 2px 0;
+  margin-bottom: 10px;
   color: red;
+  font-size: var(--fs-span);
+  background-color: var(--white);
+}
+
+.success {
+  border-radius: 0.2rem;
+  padding: 2px 0;
+  color: green;
   font-size: var(--fs-span);
   background-color: var(--white);
 }
@@ -552,7 +560,7 @@ footer {
     height: auto;
     background-color: var(--col-white);
     z-index: 10;
-    opacity: 1; 
+    opacity: 1;
   }
 
   #home {
@@ -606,7 +614,7 @@ footer {
   }
 
   #projects {
-    height: calc(70vh - 90px));
+    height: calc(70vh - 90px);
   }
 
   #contact {
