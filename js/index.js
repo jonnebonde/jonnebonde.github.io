@@ -1,4 +1,4 @@
-import { validateInputs } from "./components/ValidateContactForm.js";
+import { validateInputs } from "./components/validateContactForm.js";
 
 const toggleButton = document.querySelector(".nav-hamburgermenu-icon");
 const navMenu = document.querySelector(".nav-link-container");
