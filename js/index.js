@@ -5,6 +5,7 @@ const navMenu = document.querySelector(".nav-link-container");
 const navContainer = document.querySelector("nav");
 const linkButton = document.querySelectorAll(".nav-link-container a");
 
+
 toggleButton.addEventListener("click", () => {
   toggleButton.classList.toggle("active");
   navMenu.classList.toggle("active");
