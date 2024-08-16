@@ -1,10 +1,15 @@
+import { projects } from "./constants/ProjectsList.js";
+import { renderProjectCards } from "./components/ProjectCards.js";
 import { validateInputs } from "./components/validateContactForm.js";
+
+renderProjectCards(projects)
+
 
 const toggleButton = document.querySelector(".nav-hamburgermenu-icon");
 const navMenu = document.querySelector(".nav-link-container");
 const navContainer = document.querySelector("nav");
 const linkButton = document.querySelectorAll(".nav-link-container a");
-
+console.log("asdf")
 
 toggleButton.addEventListener("click", () => {
   toggleButton.classList.toggle("active");
@@ -56,3 +61,5 @@ window.onscroll = () => {
 const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", validateInputs);
+
+
