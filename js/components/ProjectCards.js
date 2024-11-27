@@ -1,54 +1,46 @@
-
 export function renderProjectCards(data) {
+  const container = document.getElementById("project_cards_container");
 
-  console.log("data")
+  data.forEach((project) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-const container = document.getElementById("project_cards_container");
+    const title = document.createElement("h2");
+    title.textContent = project.title;
+    card.appendChild(title);
 
-console.log(container)
+    const subtitle = document.createElement("h3");
+    subtitle.textContent = project.subtitle;
+    card.appendChild(subtitle);
 
-data.forEach((project) => {
-  const card = document.createElement("div");
-  card.classList.add("card");
+    const description = document.createElement("p");
+    description.textContent = project.description;
+    card.appendChild(description);
 
-  const title = document.createElement("h2");
-  title.textContent = project.title;
-  card.appendChild(title);
+    const img = document.createElement("img");
+    img.src = project.imgSrc;
+    img.alt = project.imgAlt;
+    card.appendChild(img);
 
-  const subtitle = document.createElement("h3");
-  subtitle.textContent = project.subtitle;
-  card.appendChild(subtitle);
+    const linksDiv = document.createElement("div");
+    linksDiv.classList.add("links");
 
-  const description = document.createElement("p");
-  description.textContent = project.description;
-  card.appendChild(description);
+    const liveSiteLink = document.createElement("a");
+    liveSiteLink.classList.add("live-site-link");
+    liveSiteLink.href = project.liveSiteLink;
+    liveSiteLink.title = project.liveSiteLink;
+    liveSiteLink.textContent = "Live site";
+    linksDiv.appendChild(liveSiteLink);
 
-  const img = document.createElement("img");
-  img.src = project.imgSrc;
-  img.alt = project.imgAlt;
-  card.appendChild(img);
+    const githubLink = document.createElement("a");
+    githubLink.classList.add("github-link");
+    githubLink.href = project.githubLink;
+    githubLink.title = project.githubLink;
+    githubLink.textContent = "Github";
+    linksDiv.appendChild(githubLink);
 
-  const linksDiv = document.createElement("div");
-  linksDiv.classList.add("links");
+    card.appendChild(linksDiv);
 
-  const liveSiteLink = document.createElement("a");
-  liveSiteLink.classList.add("live-site-link");
-  liveSiteLink.href = project.liveSiteLink;
-  liveSiteLink.title = project.liveSiteLink;
-  liveSiteLink.textContent = "Live site";
-  linksDiv.appendChild(liveSiteLink);
-
-  const githubLink = document.createElement("a");
-  githubLink.classList.add("github-link");
-  githubLink.href = project.githubLink;
-  githubLink.title = project.githubLink;
-  githubLink.textContent = "Github";
-  linksDiv.appendChild(githubLink);
-
-  card.appendChild(linksDiv);
-
-  container.appendChild(card);
-});
-
+    container.appendChild(card);
+  });
 }
-

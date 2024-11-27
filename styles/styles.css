@@ -7,7 +7,8 @@
 
 @font-face {
   font-family: "opensans";
-  src: url("../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+  src: url("../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf")
+    format("truetype");
 }
 
 * {
@@ -106,7 +107,12 @@ main {
   scroll-behavior: smooth;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(0deg, var(--col-black) 0%, rgba(47, 47, 47, 1) 50%, var(--col-black) 100%);
+  background: linear-gradient(
+    0deg,
+    var(--col-black) 0%,
+    rgba(47, 47, 47, 1) 50%,
+    var(--col-black) 100%
+  );
 }
 
 section {
@@ -182,6 +188,7 @@ h2 {
   width: 90%;
   padding: 25px;
   margin: 0 auto;
+  margin-top: 70px;
   border-radius: 0.2rem;
   color: var(--col-white);
 }
@@ -196,14 +203,16 @@ h2 {
 .about-image {
   width: 100%;
   height: auto;
+  border-radius: 0.2rem;
   margin: 5px auto;
-
 }
 
 .about-image img {
   display: block;
+  object-fit: cover;
   margin: 0 auto;
-  width: clamp(100px, 50%, 300px);
+  width: clamp(200px, 50%, 500px);
+  height: 100%;
   border-radius: 0.2rem;
 }
 
@@ -229,6 +238,7 @@ h2 {
 
 .about-skills-icons {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   padding: 10px;
 }
@@ -237,7 +247,11 @@ h2 {
 .fa-html5,
 .fa-square-js,
 .fa-wordpress,
-.fa-github {
+.fa-github,
+.fa-react,
+.fa-css,
+.fa-figma,
+.fa-bootstrap {
   font-size: var(--fs-brand);
 }
 
@@ -255,6 +269,10 @@ h2 {
 
 .fa-wordpress {
   color: #21759b;
+}
+
+.fa-react {
+  color: #61dbfb;
 }
 
 .projects-wrapper {
@@ -342,7 +360,7 @@ p {
 }
 
 .contact-wrapper {
-  margin-top: 200px;
+  margin-top: 100px;
   color: var(--col-white);
   padding: 5px 5px 30px 5px;
   border-radius: 0.2rem;
@@ -384,11 +402,11 @@ p {
 }
 
 .fa-square-twitter {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .fa-discord {
-  color: #7289DA;
+  color: #7289da;
 }
 
 .fa-github-square:hover,
@@ -495,14 +513,12 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
-
   .about-container {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 900px) {
-
   nav {
     display: flex;
     flex-direction: row-reverse;
@@ -590,11 +606,9 @@ footer {
     gap: 30px;
     margin-top: 1rem;
   }
-
 }
 
 @media screen and (max-width: 560px) {
-
   .home-text,
   .projects-wrapper {
     width: 90%;
@@ -602,24 +616,5 @@ footer {
 
   .contact-wrapper {
     width: 90%;
-  }
-}
-
-@media screen and (min-height: 1200px) {
-
-  #home {
-    min-height: 60vh;
-  }
-
-  #about {
-    min-height: 60vh;
-  }
-
-  #projects {
-    height: calc(70vh - 90px);
-  }
-
-  #contact {
-    min-height: 80vh;
   }
 }
